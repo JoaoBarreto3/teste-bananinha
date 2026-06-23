@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nossa História — Bananinha Caipira</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .trajetoria {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 3rem 2rem 4rem;
+    }
+
+    .trajetoria h2 {
+      font-family: var(--fonte-titulo);
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    .marco {
+      display: flex;
+      gap: 1.4rem;
+      margin-bottom: 2rem;
+      position: relative;
+      padding-left: 1rem;
+      border-left: 2px solid var(--cor-borda);
+    }
+
+    .marco::before {
+      content: '';
+      position: absolute;
+      left: -6px;
+      top: 6px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--cor-caramelo);
+    }
+
+    .marco-conteudo h3 {
+      font-size: 0.95rem;
+      margin-bottom: 0.3rem;
+      color: var(--cor-caramelo);
+    }
+
+    .marco-conteudo p {
+      font-size: 0.88rem;
+      color: var(--cor-texto-secundario);
+    }
+
+    @media (max-width: 480px) {
+      .trajetoria {
+        padding: 2.5rem 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="home.html" class="nav-logo">
+      <img src="../imgs/logo.svg" alt="Bananinha Caipira">
+    </a>
+
+    <button class="nav-hamburguer" id="hamburguer" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="home.html">Início</a></li>
+      <li><a href="produtos.html">Produtos</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="contato.html">Contato</a></li>
+      <li class="nav-cta-mobile"><a href="https://wa.me/5512999999999" class="nav-cta" target="_blank">Encomendar</a></li>
+    </ul>
+
+    <a href="https://wa.me/5512999999999" class="nav-cta nav-cta-desktop" target="_blank">Encomendar</a>
+  </nav>
+
+  <main>
+
+    <div class="hero-interno">
+      <h1>Nossa História</h1>
+      <p>Uma tradição caipira feita com banana, carinho e orgulho de Paraibuna</p>
+    </div>
+
+    <section class="sobre-secao">
+      <div class="sobre-inner">
+
+        <img
+          class="sobre-imagem"
+          src="../imgs/logo.svg"
+          alt="Bananinha Caipira"
+          style="object-fit: contain; background: var(--cor-borda); padding: 2rem;"
+        >
+
+        <div class="sobre-texto">
+          <h2>Feito com amor, servido com orgulho</h2>
+
+          <p>
+            A Bananinha Caipira nasceu do desejo de levar o verdadeiro sabor da banana para cada pessoa que passa por Paraibuna. O que começou de forma simples, com dedicação e carinho, tornou-se uma tradição apreciada por moradores e visitantes.
+          </p>
+
+          <p>
+            Nossas bananinhas são produzidas com ingredientes selecionados e muito cuidado em cada etapa do processo. Valorizamos a qualidade, o sabor artesanal e o respeito por quem escolhe nossos produtos.
+          </p>
+
+          <p>
+            Hoje, seguimos mantendo a mesma essência que nos trouxe até aqui: simplicidade, compromisso com a qualidade e o sabor caipira que faz parte da nossa história.
+          </p>
+
+          <div class="sobre-numeros">
+            <div class="numero-destaque">
+              <strong>25+</strong>
+              <span>Anos de tradição</span>
+            </div>
+            <div class="numero-destaque">
+              <strong>2</strong>
+              <span>Sabores artesanais</span>
+            </div>
+            <div class="numero-destaque">
+              <strong>300+</strong>
+              <span>Pedidos por semana</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="trajetoria">
+      <h2>Marcos da Nossa Trajetória</h2>
+
+      <div class="marco">
+        <div class="marco-conteudo">
+          <h3>O Início</h3>
+          <p>A Bananinha Caipira surgiu com a proposta de transformar a banana em um doce artesanal de sabor marcante, valorizando as tradições da região.</p>
+        </div>
+      </div>
+
+      <div class="marco">
+        <div class="marco-conteudo">
+          <h3>Reconhecimento Local</h3>
+          <p>Com a qualidade dos produtos e a confiança dos clientes, a marca conquistou espaço e passou a fazer parte da identidade de Paraibuna.</p>
+        </div>
+      </div>
+
+      <div class="marco">
+        <div class="marco-conteudo">
+          <h3>Novos Sabores</h3>
+          <p>A linha foi ampliada com a bananinha zero açúcar, mantendo o sabor artesanal e atendendo quem busca uma opção mais natural.</p>
+        </div>
+      </div>
+
+      <div class="marco">
+        <div class="marco-conteudo">
+          <h3>Hoje</h3>
+          <p>Seguimos produzindo com dedicação, preservando nossas raízes e levando o sabor da Bananinha Caipira para cada vez mais pessoas.</p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-marca">
+        <a href="home.html" class="footer-logo">
+          <img src="../imgs/logo.svg" alt="Bananinha Caipira">
+          <span>Bananinha Caipira</span>
+        </a>
+        <p>Doces artesanais de banana feitos com carinho em Paraibuna. Do campo à sua mesa, com sabor e tradição caipira.</p>
+        <div class="footer-redes">
+          <a href="https://instagram.com/" class="footer-rede-link" target="_blank">📸 Instagram</a>
+          <a href="https://wa.me/5512999999999" class="footer-rede-link" target="_blank">💬 WhatsApp</a>
+        </div>
+      </div>
+      <div class="footer-coluna">
+        <h4>Páginas</h4>
+        <ul>
+          <li><a href="home.html">Início</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="sobre.html">Nossa História</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-coluna">
+        <h4>Onde nos encontrar</h4>
+        <address>
+          Rua das Flores, 123<br>
+          Centro — Paraibuna/SP<br><br>
+          <a href="https://wa.me/5512999999999">📞 (12) 99999-9999</a><br><br>
+          Seg–Sex: 10h às 22h<br>
+          Sáb–Dom: 10h às 23h
+        </address>
+      </div>
+    </div>
+    <div class="footer-rodape">
+      <p>&copy; 2026 Bananinha Caipira. Todos os direitos reservados.</p>
+      <div class="footer-rodape-links">
+        <a href="sobre.html">Nossa História</a>
+        <a href="contato.html">Contato</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('hamburguer');
+    const menu = document.getElementById('nav-links');
+    btn.addEventListener('click', () => {
+      const aberto = menu.classList.toggle('nav-aberto');
+      btn.classList.toggle('ativo');
+      btn.setAttribute('aria-label', aberto ? 'Fechar menu' : 'Abrir menu');
+    });
+    menu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        menu.classList.remove('nav-aberto');
+        btn.classList.remove('ativo');
+      });
+    });
+  </script>
+
+</body>
+</html>

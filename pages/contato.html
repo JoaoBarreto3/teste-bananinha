@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato — Bananinha Caipira</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .mapa-wrapper {
+      margin-top: 2rem;
+      border-radius: var(--raio-borda);
+      overflow: hidden;
+      border: 1px solid var(--cor-borda);
+      background: var(--cor-borda);
+      height: 280px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--cor-texto-secundario);
+      font-size: 0.88rem;
+    }
+
+    .mapa-wrapper iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .horarios-tabela {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1.5rem;
+      font-size: 0.88rem;
+    }
+
+    .horarios-tabela td {
+      padding: 0.55rem 0;
+      border-bottom: 1px solid var(--cor-borda);
+      color: var(--cor-texto-secundario);
+    }
+
+    .horarios-tabela td:first-child {
+      color: var(--cor-texto);
+      font-weight: 500;
+    }
+
+    .horarios-tabela td:last-child {
+      text-align: right;
+    }
+
+    .badge-aberto {
+      display: inline-block;
+      background: #22c55e;
+      color: #fff;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 0.15rem 0.55rem;
+      border-radius: 99px;
+      margin-left: 0.4rem;
+    }
+
+    .redes-contato {
+      display: flex;
+      gap: 0.8rem;
+      margin-top: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .rede-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.5rem 1rem;
+      border-radius: var(--raio-borda);
+      font-size: 0.82rem;
+      font-weight: 600;
+      text-decoration: none;
+      border: 1px solid var(--cor-borda);
+      color: var(--cor-texto);
+      transition: all 0.2s;
+    }
+
+    .rede-btn:hover {
+      border-color: var(--cor-caramelo);
+      color: var(--cor-caramelo);
+    }
+
+    .rotulo-secao {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="home.html" class="nav-logo">
+      <img src="../imgs/logo.svg" alt="Bananinha Caipira">
+    </a>
+
+    <button class="nav-hamburguer" id="hamburguer" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="home.html">Início</a></li>
+      <li><a href="produtos.html">Produtos</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="contato.html">Contato</a></li>
+      <li class="nav-cta-mobile"><a href="https://wa.me/5512999999999" class="nav-cta" target="_blank">Encomendar</a></li>
+    </ul>
+
+    <a href="https://wa.me/5512999999999" class="nav-cta nav-cta-desktop" target="_blank">Encomendar</a>
+  </nav>
+
+  <main>
+
+    <div class="hero-interno">
+      <h1>Fale Conosco</h1>
+      <p>Encomendas, dúvidas ou só um oi — estamos aqui para você</p>
+    </div>
+
+    <section class="contato-secao">
+      <div class="contato-inner">
+
+        <div class="contato-info">
+          <h2>Onde estamos e como falar com a gente</h2>
+          <p>Visite nossa doceria, ligue ou mande mensagem. Respondemos rápido!</p>
+
+          <div class="contato-item">
+            <div class="contato-item-icone">📍</div>
+            <div class="contato-item-texto">
+              <strong>Endereço</strong>
+              <span>Rua das Flores, 123 — Centro, Paraibuna/SP</span>
+            </div>
+          </div>
+
+          <div class="contato-item">
+            <div class="contato-item-icone">📞</div>
+            <div class="contato-item-texto">
+              <strong>Telefone / WhatsApp</strong>
+              <a href="https://wa.me/5512999999999">(12) 99999-9999</a>
+            </div>
+          </div>
+
+          <div class="contato-item">
+            <div class="contato-item-icone">✉️</div>
+            <div class="contato-item-texto">
+              <strong>E-mail</strong>
+              <a href="mailto:contato@bananinhacaipira.com.br">contato@bananinhacaipira.com.br</a>
+            </div>
+          </div>
+
+          <strong class="rotulo-secao" style="margin-top: 1rem;">Horário de Atendimento</strong>
+          <table class="horarios-tabela">
+            <tr>
+              <td>Segunda — Sexta</td>
+              <td>10h às 22h <span class="badge-aberto">Aberto</span></td>
+            </tr>
+            <tr>
+              <td>Sábado</td>
+              <td>10h às 23h</td>
+            </tr>
+            <tr>
+              <td>Domingo</td>
+              <td>11h às 21h</td>
+            </tr>
+            <tr>
+              <td>Feriados</td>
+              <td>11h às 20h</td>
+            </tr>
+          </table>
+
+          <div style="margin-top: 2rem;">
+            <strong class="rotulo-secao">Redes Sociais</strong>
+            <div class="redes-contato">
+              <a href="https://instagram.com/" class="rede-btn" target="_blank">📸 Instagram</a>
+              <a href="https://facebook.com/" class="rede-btn" target="_blank">👍 Facebook</a>
+              <a href="https://wa.me/5512999999999" class="rede-btn" target="_blank">💬 WhatsApp</a>
+            </div>
+          </div>
+
+          <div class="mapa-wrapper">
+            <!-- ✏️ Cole o iframe do Google Maps aqui:
+                 Maps → pesquise o endereço → Compartilhar → Incorporar um mapa → copie o src -->
+            <span>🗺️ Cole o embed do Google Maps aqui</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-marca">
+        <a href="home.html" class="footer-logo">
+          <img src="../imgs/logo.svg" alt="Bananinha Caipira">
+          <span>Bananinha Caipira</span>
+        </a>
+        <p>Doces artesanais de banana feitos com carinho em Paraibuna. Do campo à sua mesa, com sabor e tradição caipira.</p>
+        <div class="footer-redes">
+          <a href="https://instagram.com/" class="footer-rede-link" target="_blank">📸 Instagram</a>
+          <a href="https://wa.me/5512999999999" class="footer-rede-link" target="_blank">💬 WhatsApp</a>
+        </div>
+      </div>
+      <div class="footer-coluna">
+        <h4>Páginas</h4>
+        <ul>
+          <li><a href="home.html">Início</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="sobre.html">Nossa História</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-coluna">
+        <h4>Onde nos encontrar</h4>
+        <address>
+          Rua das Flores, 123<br>
+          Centro — Paraibuna/SP<br><br>
+          <a href="https://wa.me/5512999999999">📞 (12) 99999-9999</a><br><br>
+          Seg–Sex: 10h às 22h<br>
+          Sáb–Dom: 10h às 23h
+        </address>
+      </div>
+    </div>
+    <div class="footer-rodape">
+      <p>&copy; 2026 Bananinha Caipira. Todos os direitos reservados.</p>
+      <div class="footer-rodape-links">
+        <a href="sobre.html">Nossa História</a>
+        <a href="contato.html">Contato</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('hamburguer');
+    const menu = document.getElementById('nav-links');
+    btn.addEventListener('click', () => {
+      const aberto = menu.classList.toggle('nav-aberto');
+      btn.classList.toggle('ativo');
+      btn.setAttribute('aria-label', aberto ? 'Fechar menu' : 'Abrir menu');
+    });
+    menu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        menu.classList.remove('nav-aberto');
+        btn.classList.remove('ativo');
+      });
+    });
+  </script>
+
+</body>
+</html>

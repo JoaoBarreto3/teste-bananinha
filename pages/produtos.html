@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produtos — Bananinha Caipira</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    /* Filtros de categoria */
+    .filtros {
+      display: flex;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 2.5rem;
+    }
+
+    .filtro-btn {
+      padding: 0.45rem 1.1rem;
+      border: 1px solid var(--cor-borda);
+      border-radius: 99px;
+      background: transparent;
+      font-size: 0.82rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      cursor: pointer;
+      font-family: var(--fonte-corpo);
+      color: var(--cor-texto);
+      transition: all 0.2s;
+    }
+
+    .filtro-btn.ativo,
+    .filtro-btn:hover {
+      background: var(--cor-caramelo);
+      border-color: var(--cor-caramelo);
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="home.html" class="nav-logo">
+      <img src="../imgs/logo.svg" alt="Bananinha Caipira">
+    </a>
+
+    <button class="nav-hamburguer" id="hamburguer" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="home.html">Início</a></li>
+      <li><a href="produtos.html">Produtos</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="contato.html">Contato</a></li>
+      <li class="nav-cta-mobile"><a href="https://wa.me/5512999999999" class="nav-cta" target="_blank">Encomendar</a></li>
+    </ul>
+
+    <a href="https://wa.me/5512999999999" class="nav-cta nav-cta-desktop" target="_blank">Encomendar</a>
+  </nav>
+
+  <main>
+
+    <div class="hero-interno">
+      <h1>Nossos Produtos</h1>
+      <p>Doces artesanais feitos com banana selecionada e muito carinho</p>
+    </div>
+
+    <section class="secao-produtos" style="padding-top: 3rem;">
+      <div class="secao-produtos-inner">
+
+        <h2 class="categoria-titulo">Bananinhas Artesanais</h2>
+        <div class="produtos-grade">
+
+          <div class="produto-card">
+            <div class="produto-imagem" style="background-image: url('../imgs/acucar.svg'); background-color: #f5f0e0;"></div>
+            <div class="produto-corpo">
+              <h3>Bananinha Tradicional</h3>
+              <p>Banana selecionada com açúcar cristal, do jeitinho artesanal que todo mundo ama.</p>
+              <span class="produto-preco">R$ 28,90</span>
+            </div>
+          </div>
+
+          <div class="produto-card">
+            <div class="produto-imagem" style="background-image: url('../imgs/zero.svg'); background-color: #eef5e8;"></div>
+            <div class="produto-corpo">
+              <h3>Bananinha Zero Açúcar</h3>
+              <p>100% banana, sem aditivos. Opção saudável com todo o sabor natural da fruta.</p>
+              <span class="produto-preco">R$ 28,90</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- CTA WHATSAPP -->
+        <div style="text-align:center; margin-top: 3.5rem; padding: 2.5rem; background: var(--cor-fundo-secao); border-radius: var(--raio-borda); border: 1px solid var(--cor-borda);">
+          <p style="font-size:1.1rem; font-weight:700; margin-bottom:0.5rem;">Pronto para fazer seu pedido?</p>
+          <p style="color: var(--cor-texto-secundario); margin-bottom:1.5rem; font-size:0.9rem;">Encomende pelo WhatsApp e receba suas bananinhas fresquinhas</p>
+          <a href="https://wa.me/5512999999999" class="btn-primario" target="_blank">Encomendar pelo WhatsApp</a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-marca">
+        <a href="home.html" class="footer-logo">
+          <img src="../imgs/logo.svg" alt="Bananinha Caipira">
+          <span>Bananinha Caipira</span>
+        </a>
+        <p>Doces artesanais de banana feitos com carinho em Paraibuna. Do campo à sua mesa, com sabor e tradição caipira.</p>
+        <div class="footer-redes">
+          <a href="https://instagram.com/" class="footer-rede-link" target="_blank">📸 Instagram</a>
+          <a href="https://wa.me/5512999999999" class="footer-rede-link" target="_blank">💬 WhatsApp</a>
+        </div>
+      </div>
+      <div class="footer-coluna">
+        <h4>Páginas</h4>
+        <ul>
+          <li><a href="home.html">Início</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="sobre.html">Nossa História</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-coluna">
+        <h4>Onde nos encontrar</h4>
+        <address>
+          Rua das Flores, 123<br>
+          Centro — Paraibuna/SP<br><br>
+          <a href="https://wa.me/5512999999999">📞 (12) 99999-9999</a><br><br>
+          Seg–Sex: 10h às 22h<br>
+          Sáb–Dom: 10h às 23h
+        </address>
+      </div>
+    </div>
+    <div class="footer-rodape">
+      <p>&copy; 2026 Bananinha Caipira. Todos os direitos reservados.</p>
+      <div class="footer-rodape-links">
+        <a href="sobre.html">Nossa História</a>
+        <a href="contato.html">Contato</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('hamburguer');
+    const menu = document.getElementById('nav-links');
+    btn.addEventListener('click', () => {
+      const aberto = menu.classList.toggle('nav-aberto');
+      btn.classList.toggle('ativo');
+      btn.setAttribute('aria-label', aberto ? 'Fechar menu' : 'Abrir menu');
+    });
+    menu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        menu.classList.remove('nav-aberto');
+        btn.classList.remove('ativo');
+      });
+    });
+  </script>
+
+</body>
+</html>
